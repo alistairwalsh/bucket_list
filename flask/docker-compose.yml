@@ -7,8 +7,9 @@ services:
       - ./www:/opt/www
     environment:
       - FLASK_APP=microblog.py
+      - FLASK_DEBUG=1
     ports:
-      - "80:80"
+      - "5000:5000"
     #links:
       #- db
     #depends_on:

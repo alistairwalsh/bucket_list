@@ -10,5 +10,5 @@ WORKDIR /opt/www
 RUN pip install -r requirements.txt
 
 EXPOSE 80
-CMD flask run
+CMD flask run --host 0.0.0.0
 #CMD python microblog.py
