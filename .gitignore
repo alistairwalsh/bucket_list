@@ -6,3 +6,5 @@ flask/\.DS_Store
 docker-examples-master\.zip
 
 flask/db/database/
+
+*.pyc

@@ -39,5 +39,18 @@ def test():
 def showSignUp():
     return render_template('signup.html')
 
+@app.route('/somewhere')
+def index():
+    user = {'username': 'miguel'}
+    return '''
+<html>
+    <head>
+        <title>Home Page - Microblog</title>
+    </head>
+    <body>
+        <h1>Hello, ''' + user['username'] + '''!</h1>
+    </body>
+</html>'''
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    app.run(host="0.0.0.0", port=80, debug = True)

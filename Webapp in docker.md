@@ -46,6 +46,9 @@ create a word cloud from text
 
 [link](http://www.patricksoftwareblog.com/using-docker-for-flask-application-development-not-just-production/)
 
+a simple setup for now is to use docker-compose to link the app folder with the app folder in the docker container and turn debugging on. This means changes to the flask app will be updated without rebuilding the container
+
+
 ## More detailed production env
 
 [link](https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/)

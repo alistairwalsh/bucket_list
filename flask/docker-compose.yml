@@ -3,6 +3,8 @@ services:
 
   www:
     build: www/.
+    volumes:
+      - ./www/app:/opt/www/app
     ports:
       - "80:80"
     links:
