@@ -1,4 +1,5 @@
 flask
-flask-sqlalchemy
-mysql-python
-flask-mysql
+#flask-sqlalchemy
+#mysql-python
+#flask-mysql
+flask-wtf

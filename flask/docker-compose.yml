@@ -8,6 +8,7 @@ services:
     environment:
       - FLASK_APP=microblog.py
       - FLASK_DEBUG=1
+      - SECRET_KEY='you-will-never-guess'
     ports:
       - "5000:5000"
     #links:
