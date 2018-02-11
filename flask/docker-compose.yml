@@ -4,17 +4,19 @@ services:
   www:
     build: www/.
     volumes:
-      - ./www/app:/opt/www/app
+      - ./www:/opt/www
+    environment:
+      - FLASK_APP=microblog.py
     ports:
       - "80:80"
-    links:
-      - db
-    depends_on:
-      - db
+    #links:
+      #- db
+    #depends_on:
+      #- db
 
-  db:
-    build: db/.
-    volumes:
-      - ./db/database:/var/lib/mysql
-    environment:
-       MYSQL_ROOT_PASSWORD: supersecure
+  #db:
+    #build: db/.
+    #volumes:
+      #- ./db/database:/var/lib/mysql
+    #environment:
+       #MYSQL_ROOT_PASSWORD: supersecure

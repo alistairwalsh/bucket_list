@@ -1,6 +1,6 @@
 # A simple Flask app container.
 FROM python:2.7
-LABEL maintainer="Jeff Geerling"
+LABEL maintainer="Alistair Walsh"
 
 # Place app in container.
 COPY . /opt/www
@@ -10,4 +10,5 @@ WORKDIR /opt/www
 RUN pip install -r requirements.txt
 
 EXPOSE 80
-CMD python app/index.py
+CMD flask run
+#CMD python microblog.py
